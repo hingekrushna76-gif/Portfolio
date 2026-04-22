@@ -11,6 +11,19 @@ import ChatBot from './assets/Component/ChatBot'
 import Project from './assets/Component/Project'
 
 function App() {
+  const [dark, setDark] = useState(true);
+
+  // Load saved theme
+  useEffect(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved) setDark(saved === "dark");
+  }, []);
+
+  // Apply theme globally
+  useEffect(() => {
+    document.body.className = dark ? "darkTheme" : "lightTheme";
+    localStorage.setItem("theme", dark ? "dark" : "light");
+  }, [dark]);
   return (
     <div className='Main'>
       <BrowserRouter>
@@ -24,6 +37,7 @@ function App() {
         <Route path='/project' element={<Project/>}/>
       </Routes>
       <ChatBot/>
+            <NavBar dark={dark} setDark={setDark} />
       </BrowserRouter>
     </div>
   )
