@@ -70,10 +70,10 @@ function Contact() {
                         <h3>📧 Email : example@example.com</h3>
 
                         <div className='iconsmedia bg-white rounded-pill px-3 py-2'>
-                            <span><img src="github icon.svg" alt="" /></span>
-                            <span><img src="linkdin icon.webp" alt="" /></span>
-                            <span><img src="Instagram_icon.png" alt="" /></span>
-                            <span><img src="Facebook_logo.png" alt="" /></span>
+                            <span><a href="https://github.com/hingekrushna76-gif"><img src="github icon.svg" alt="" /></a></span>
+                            <span><a href="https://in.linkedin.com/?mcid=6844056167778418689&src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418467_crid.657403558730_kw.purpose%20of%20linkedin_d.c_tid.kwd-932179667451_n.g_mt.e_geo.9040235&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=14650114788&gbraid=0AAAAABKX7wGVm5qVjWkLnDfcxCTuguKwb&gclid=CjwKCAjwwJzPBhBREiwAJfHRnegif6vjZIhqZ9xVRC0y0MtaENSa_nt_gOp9A8oICgCBeM0-aU_eABoC90EQAvD_BwE"><img src="linkdin icon.webp" height={40} alt="" /></a></span>
+                            <span><a href="https://www.instagram.com/krushna_hinge_905/"><img src="Instagram_icon.png" height={40} alt="" /></a></span>
+                            <span><a href="http://facebook.com/profile.php?id=100074775613736"><img src="Facebook_logo.png" height={40} alt="" /></a></span>
                         </div>
                     </div>
                 </div>
